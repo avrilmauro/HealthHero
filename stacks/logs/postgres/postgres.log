@@ -6,3 +6,4 @@
 2023-04-16 22:22:02.383 UTC [3007] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
 2023-04-16 22:25:02.399 UTC [3179] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
 2023-04-16 22:32:42.396 UTC [1454] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-16 23:04:42.832 UTC [5420] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
