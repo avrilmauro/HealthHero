@@ -12,5 +12,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "3c16d238-0795-4eee-bf0b-d09cd7890401",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/view_medical_conditions",
+    "url": "localhost:8001/p/view_medical_conditions",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-16T23:10:05.532Z",
+    "modified": "2023-04-16T23:10:05.532Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
