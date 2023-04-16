@@ -1,0 +1,17 @@
+Load environment configuration
+mkdir: created directory '/appsmith-stacks/data/certificate'
+mkdir: created directory '/appsmith-stacks/data/certificate/conf'
+'/opt/appsmith/editor/index.html' -> '/opt/appsmith/index.html.original'
+127.0.0.1 - - [16/Apr/2023:21:15:11 +0000] "GET /rts-api/v1/health-check HTTP/1.1" 200 16 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:15:15 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:15:31 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:15:46 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:16:01 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:16:16 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:16:31 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:16:47 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:17:02 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:17:17 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:17:32 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:17:47 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
+127.0.0.1 - - [16/Apr/2023:21:18:03 +0000] "GET / HTTP/1.1" 200 4551 "-" "curl/7.68.0"
