@@ -1,0 +1,56 @@
+1558:C 16 Apr 2023 21:16:55.117 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1558:C 16 Apr 2023 21:16:55.117 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1558, just started
+1558:C 16 Apr 2023 21:16:55.117 # Configuration loaded
+1558:M 16 Apr 2023 21:16:55.118 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1558
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1558:M 16 Apr 2023 21:16:55.122 # Server initialized
+1558:M 16 Apr 2023 21:16:55.122 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1558:M 16 Apr 2023 21:16:55.124 * Ready to accept connections
+1558:M 16 Apr 2023 21:17:45.681 * 1 changes in 15 seconds. Saving...
+1558:M 16 Apr 2023 21:17:45.682 * Background saving started by pid 1815
+1815:C 16 Apr 2023 21:17:45.699 * DB saved on disk
+1815:C 16 Apr 2023 21:17:45.707 * RDB: 0 MB of memory used by copy-on-write
+1558:M 16 Apr 2023 21:17:45.782 * Background saving terminated with success
+1558:M 16 Apr 2023 21:38:24.198 * 1 changes in 900 seconds. Saving...
+1558:M 16 Apr 2023 21:38:24.198 * Background saving started by pid 2925
+2925:C 16 Apr 2023 21:38:24.207 * DB saved on disk
+2925:C 16 Apr 2023 21:38:24.211 * RDB: 0 MB of memory used by copy-on-write
+1558:M 16 Apr 2023 21:38:24.299 * Background saving terminated with success
+1558:M 16 Apr 2023 21:38:40.078 * 1 changes in 15 seconds. Saving...
+1558:M 16 Apr 2023 21:38:40.079 * Background saving started by pid 2955
+2955:C 16 Apr 2023 21:38:40.086 * DB saved on disk
+2955:C 16 Apr 2023 21:38:40.087 * RDB: 0 MB of memory used by copy-on-write
+1558:M 16 Apr 2023 21:38:40.179 * Background saving terminated with success
+1558:M 16 Apr 2023 21:38:56.047 * 1 changes in 15 seconds. Saving...
+1558:M 16 Apr 2023 21:38:56.047 * Background saving started by pid 2972
+2972:C 16 Apr 2023 21:38:56.054 * DB saved on disk
+2972:C 16 Apr 2023 21:38:56.055 * RDB: 0 MB of memory used by copy-on-write
+1558:M 16 Apr 2023 21:38:56.148 * Background saving terminated with success
+1558:M 16 Apr 2023 21:39:12.020 * 1 changes in 15 seconds. Saving...
+1558:M 16 Apr 2023 21:39:12.021 * Background saving started by pid 2992
+2992:C 16 Apr 2023 21:39:12.028 * DB saved on disk
+2992:C 16 Apr 2023 21:39:12.030 * RDB: 0 MB of memory used by copy-on-write
+1558:M 16 Apr 2023 21:39:12.121 * Background saving terminated with success
+1558:signal-handler (1681681608) Received SIGTERM scheduling shutdown...
+1558:M 16 Apr 2023 21:46:48.915 # User requested shutdown...
+1558:M 16 Apr 2023 21:46:48.915 * Saving the final RDB snapshot before exiting.
+1558:M 16 Apr 2023 21:46:48.925 * DB saved on disk
+1558:M 16 Apr 2023 21:46:48.925 * Removing the pid file.
+1558:M 16 Apr 2023 21:46:48.925 # Redis is now ready to exit, bye bye...

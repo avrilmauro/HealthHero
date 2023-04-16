@@ -1,0 +1,68 @@
++ http_conf=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ https_conf=/opt/appsmith/templates/nginx-app-https.conf.template.sh
++ ssl_conf_path=/appsmith-stacks/data/certificate/conf
++ APP_TEMPLATE=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ mkdir -pv /appsmith-stacks/data/certificate/conf
++ cat
++ cat
++ [[ -z 'self' * ]]
++ export 'APPSMITH_ALLOWED_FRAME_ANCESTORS='\''self'\'' *'
++ APPSMITH_ALLOWED_FRAME_ANCESTORS=''\''self'\'' *'
++ [[ -z false ]]
++ [[ -n '' ]]
++ bash /opt/appsmith/templates/nginx-app-http.conf.template.sh ''
++ index_html_served=/opt/appsmith/editor/index.html
++ index_html_original=/opt/appsmith/index.html.original
++ [[ ! -f /opt/appsmith/index.html.original ]]
++ cp -v /opt/appsmith/editor/index.html /opt/appsmith/index.html.original
++ node -e '
+const fs = require("fs")
+const content = fs.readFileSync("/opt/appsmith/index.html.original", "utf8").replace(
+  /\b__(APPSMITH_[A-Z0-9_]+)__\b/g,
+  (placeholder, name) => (process.env[name] || "")
+)
+fs.writeFileSync("/opt/appsmith/editor/index.html", content)
+'
++ exec nginx -g 'daemon off;error_log stderr info;'
+2023/04/16 21:16:55 [notice] 1566#1566: using the "epoll" event method
+2023/04/16 21:16:55 [notice] 1566#1566: nginx/1.18.0 (Ubuntu)
+2023/04/16 21:16:55 [notice] 1566#1566: OS: Linux 5.15.49-linuxkit
+2023/04/16 21:16:55 [notice] 1566#1566: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/16 21:16:55 [notice] 1566#1566: start worker processes
+2023/04/16 21:16:55 [notice] 1566#1566: start worker process 1602
+2023/04/16 21:16:55 [notice] 1566#1566: start worker process 1603
+2023/04/16 21:16:55 [notice] 1566#1566: start worker process 1604
+2023/04/16 21:16:55 [notice] 1566#1566: start worker process 1605
+2023/04/16 21:16:55 [notice] 1566#1566: start worker process 1606
+2023/04/16 21:16:55 [notice] 1566#1566: start worker process 1607
+2023/04/16 21:46:43 [notice] 1566#1566: signal 3 (SIGQUIT) received from 1, shutting down
+2023/04/16 21:46:43 [notice] 1603#1603: gracefully shutting down
+2023/04/16 21:46:43 [notice] 1602#1602: gracefully shutting down
+2023/04/16 21:46:43 [notice] 1603#1603: exiting
+2023/04/16 21:46:43 [notice] 1602#1602: exiting
+2023/04/16 21:46:43 [notice] 1605#1605: gracefully shutting down
+2023/04/16 21:46:43 [notice] 1605#1605: exiting
+2023/04/16 21:46:43 [notice] 1606#1606: gracefully shutting down
+2023/04/16 21:46:43 [notice] 1606#1606: exiting
+2023/04/16 21:46:43 [notice] 1604#1604: gracefully shutting down
+2023/04/16 21:46:43 [notice] 1604#1604: exiting
+2023/04/16 21:46:43 [notice] 1602#1602: exit
+2023/04/16 21:46:43 [notice] 1605#1605: exit
+2023/04/16 21:46:43 [notice] 1603#1603: exit
+2023/04/16 21:46:43 [notice] 1604#1604: exit
+2023/04/16 21:46:43 [notice] 1606#1606: exit
+2023/04/16 21:46:43 [notice] 1566#1566: signal 17 (SIGCHLD) received from 1604
+2023/04/16 21:46:43 [notice] 1566#1566: worker process 1603 exited with code 0
+2023/04/16 21:46:43 [notice] 1566#1566: worker process 1604 exited with code 0
+2023/04/16 21:46:43 [notice] 1566#1566: worker process 1605 exited with code 0
+2023/04/16 21:46:43 [notice] 1566#1566: worker process 1606 exited with code 0
+2023/04/16 21:46:43 [notice] 1607#1607: gracefully shutting down
+2023/04/16 21:46:43 [notice] 1607#1607: exiting
+2023/04/16 21:46:43 [notice] 1566#1566: signal 29 (SIGIO) received
+2023/04/16 21:46:43 [notice] 1566#1566: signal 17 (SIGCHLD) received from 1602
+2023/04/16 21:46:43 [notice] 1566#1566: worker process 1602 exited with code 0
+2023/04/16 21:46:43 [notice] 1566#1566: signal 29 (SIGIO) received
+2023/04/16 21:46:43 [notice] 1607#1607: exit
+2023/04/16 21:46:43 [notice] 1566#1566: signal 17 (SIGCHLD) received from 1607
+2023/04/16 21:46:43 [notice] 1566#1566: worker process 1607 exited with code 0
+2023/04/16 21:46:43 [notice] 1566#1566: exit

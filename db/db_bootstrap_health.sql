@@ -91,7 +91,7 @@ CREATE TABLE Patient
     PRIMARY KEY (SSN),
     FOREIGN KEY (CompanyID) references Insurance (CompanyID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE Table ChemicalCompounds
@@ -115,7 +115,7 @@ CREATE TABLE Pharmacist
     PRIMARY KEY (EmployeeID),
     FOREIGN KEY (PharmID) references Pharmacy (PharmID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Medication
@@ -151,7 +151,7 @@ CREATE TABLE DoctorReviews
     PRIMARY KEY (ReviewID, DoctorID),
     FOREIGN KEY (DoctorID) references Doctor (DoctorID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 # ALTER TABLE DoctorReviews AUTO_INCREMENT=1001;
@@ -168,16 +168,16 @@ CREATE TABLE Prescription
     PRIMARY KEY (PrescID, SSN, DoctorID, PharmID, MedID),
     FOREIGN KEY (SSN) references Patient (SSN)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (DoctorID) references Doctor (DoctorID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (PharmID) references Pharmacy (PharmID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (MedID) references Medication (MedID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 ############################################################
 
@@ -190,10 +190,10 @@ CREATE TABLE Patient_diagnosed_MedicalCondition
     PRIMARY KEY (ConditionID, SSN),
     FOREIGN KEY (ConditionID) references MedicalCondition (ConditionID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (SSN) references Patient (SSN)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Medication_contains_ChemicalCompounds
@@ -203,10 +203,10 @@ CREATE TABLE Medication_contains_ChemicalCompounds
     PRIMARY KEY (ChemID, MedID),
     FOREIGN KEY (ChemID) references ChemicalCompounds (ChemID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (MedID) references Medication (MedID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Pharmacy_contains_Medication
@@ -218,10 +218,10 @@ CREATE TABLE Pharmacy_contains_Medication
     PRIMARY KEY (MedID, PharmID),
     FOREIGN KEY (MedID) references Medication (MedID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (PharmID) references Pharmacy (PharmID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Doctor_treats_Patient
@@ -233,10 +233,10 @@ CREATE TABLE Doctor_treats_Patient
     Primary Key (DoctorID, SSN),
     FOREIGN KEY (DoctorID) references Doctor (DoctorID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (SSN) references Patient (SSN)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Doctor_worksAt_Practice
@@ -246,10 +246,10 @@ CREATE TABLE Doctor_worksAt_Practice
     PRIMARY KEY (DoctorID, PracticeNumber),
     FOREIGN KEY (DoctorID) references Doctor (DoctorID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (PracticeNumber) references Practice (PracticeNumber)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Doctor_attended_EducationalInstitute
@@ -262,10 +262,10 @@ CREATE TABLE Doctor_attended_EducationalInstitute
     PRIMARY KEY (DoctorID, InstitutionID),
     FOREIGN KEY (DoctorID) references Doctor (DoctorID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (InstitutionID) references EducationalInstitute (InstitutionID)
         ON UPDATE RESTRICT
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Pharmacist_attended_EducationalInstitute
@@ -278,10 +278,10 @@ CREATE TABLE Pharmacist_attended_EducationalInstitute
     PRIMARY KEY (EmployeeID, InstitutionID),
     FOREIGN KEY (EmployeeID) references Pharmacist (EmployeeID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (InstitutionID) references EducationalInstitute (InstitutionID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Practice_accepts_Insurance
@@ -291,10 +291,10 @@ CREATE TABLE Practice_accepts_Insurance
     PRIMARY KEY (CompanyID, PracticeNumber),
     FOREIGN KEY (CompanyID) references Insurance (CompanyID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE CASCADE,
     FOREIGN KEY (PracticeNumber) references Practice (PracticeNumber)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 ############################################################
 
@@ -307,7 +307,7 @@ CREATE TABLE Allergies
     PRIMARY KEY (Allergy, SSN),
     FOREIGN KEY (SSN) references Patient (SSN)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Emails
@@ -317,7 +317,7 @@ CREATE TABLE Emails
     PRIMARY KEY (Email, SSN),
     FOREIGN KEY (SSN) references Patient (SSN)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT
+        ON DELETE CASCADE
 );
 ############################################################
 
