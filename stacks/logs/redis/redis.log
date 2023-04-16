@@ -54,3 +54,39 @@
 1558:M 16 Apr 2023 21:46:48.925 * DB saved on disk
 1558:M 16 Apr 2023 21:46:48.925 * Removing the pid file.
 1558:M 16 Apr 2023 21:46:48.925 # Redis is now ready to exit, bye bye...
+1404:C 16 Apr 2023 21:57:21.453 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1404:C 16 Apr 2023 21:57:21.453 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1404, just started
+1404:C 16 Apr 2023 21:57:21.453 # Configuration loaded
+1404:M 16 Apr 2023 21:57:21.455 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1404
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1404:M 16 Apr 2023 21:57:21.460 # Server initialized
+1404:M 16 Apr 2023 21:57:21.460 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1404:M 16 Apr 2023 21:57:21.465 * DB loaded from disk: 0.005 seconds
+1404:M 16 Apr 2023 21:57:21.465 * Ready to accept connections
+1404:M 16 Apr 2023 22:26:00.626 * 1 changes in 900 seconds. Saving...
+1404:M 16 Apr 2023 22:26:00.626 * Background saving started by pid 3241
+3241:C 16 Apr 2023 22:26:00.638 * DB saved on disk
+3241:C 16 Apr 2023 22:26:00.639 * RDB: 0 MB of memory used by copy-on-write
+1404:M 16 Apr 2023 22:26:00.727 * Background saving terminated with success
+1404:M 16 Apr 2023 22:26:16.078 * 1 changes in 15 seconds. Saving...
+1404:M 16 Apr 2023 22:26:16.079 * Background saving started by pid 3261
+3261:C 16 Apr 2023 22:26:16.086 * DB saved on disk
+3261:C 16 Apr 2023 22:26:16.087 * RDB: 0 MB of memory used by copy-on-write
+1404:M 16 Apr 2023 22:26:16.179 * Background saving terminated with success
