@@ -2,7 +2,7 @@
 # Main application interface
 ###
 
-""" TEST COMMENT """
+""" TEST COMMENT 2 """
 
 # import the create app function 
 # that lives in src/__init__.py
