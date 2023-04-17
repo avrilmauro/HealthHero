@@ -86,6 +86,7 @@ def get_patient_medical_condtions():
 
     return jsonify(json_data)
  
+ # erfef
 # Daignose a patient with a new medical condition
 @doctors.route('/view_medical_conditions_in_database', methods=['GET'])
 def view_medical_conditions_in_database():
