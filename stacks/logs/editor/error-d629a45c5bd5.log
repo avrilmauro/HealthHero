@@ -34,3 +34,29 @@ fs.writeFileSync("/opt/appsmith/editor/index.html", content)
 2023/04/16 21:15:10 [notice] 1586#1586: start worker process 1621
 2023/04/16 21:15:10 [notice] 1586#1586: start worker process 1622
 2023/04/16 21:15:10 [notice] 1586#1586: start worker process 1623
+2023/04/16 21:28:19 [notice] 1586#1586: signal 3 (SIGQUIT) received from 1, shutting down
+2023/04/16 21:28:19 [notice] 1620#1620: gracefully shutting down
+2023/04/16 21:28:19 [notice] 1619#1619: gracefully shutting down
+2023/04/16 21:28:19 [notice] 1623#1623: gracefully shutting down
+2023/04/16 21:28:19 [notice] 1623#1623: exiting
+2023/04/16 21:28:19 [notice] 1622#1622: gracefully shutting down
+2023/04/16 21:28:19 [notice] 1621#1621: gracefully shutting down
+2023/04/16 21:28:19 [notice] 1621#1621: exiting
+2023/04/16 21:28:19 [notice] 1622#1622: exiting
+2023/04/16 21:28:19 [notice] 1619#1619: exiting
+2023/04/16 21:28:19 [notice] 1623#1623: exit
+2023/04/16 21:28:19 [notice] 1586#1586: signal 17 (SIGCHLD) received from 1623
+2023/04/16 21:28:19 [notice] 1586#1586: worker process 1623 exited with code 0
+2023/04/16 21:28:19 [notice] 1619#1619: exit
+2023/04/16 21:28:19 [notice] 1586#1586: signal 29 (SIGIO) received
+2023/04/16 21:28:19 [notice] 1621#1621: exit
+2023/04/16 21:28:19 [notice] 1622#1622: exit
+2023/04/16 21:28:19 [notice] 1586#1586: signal 17 (SIGCHLD) received from 1619
+2023/04/16 21:28:19 [notice] 1586#1586: worker process 1619 exited with code 0
+2023/04/16 21:28:19 [notice] 1586#1586: signal 29 (SIGIO) received
+2023/04/16 21:28:19 [notice] 1586#1586: signal 17 (SIGCHLD) received from 1621
+2023/04/16 21:28:19 [notice] 1586#1586: worker process 1621 exited with code 0
+2023/04/16 21:28:19 [notice] 1586#1586: signal 29 (SIGIO) received
+2023/04/16 21:28:19 [notice] 1586#1586: signal 17 (SIGCHLD) received from 1622
+2023/04/16 21:28:19 [notice] 1586#1586: worker process 1622 exited with code 0
+2023/04/16 21:28:19 [notice] 1586#1586: signal 29 (SIGIO) received

@@ -424,3 +424,5 @@ SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 Please open http://localhost:<port> in your browser to experience Appsmith!
 
 [2023-04-16 21:15:37,338]  - Cancelled mongock lock daemon
+[2023-04-16 21:19:02,220] userEmail=anonymousUser, sessionId=d80b3967-1954-40f8-b1ee-1feae8f1233c, thread=lettuce-nioEventLoop-7-1, requestId=e2cd5e55-d3c9-4617-a750-db19abd1dea0 - Cache miss for key permissionGroupsForUser:anonymousUser643c6567b0e5d11d7677f8eb
+[2023-04-16 21:19:02,221] userEmail=anonymousUser, sessionId=d80b3967-1954-40f8-b1ee-1feae8f1233c, thread=lettuce-nioEventLoop-7-1, requestId=e2cd5e55-d3c9-4617-a750-db19abd1dea0 - Cache entry added for key permissionGroupsForUser:anonymousUser643c6567b0e5d11d7677f8eb

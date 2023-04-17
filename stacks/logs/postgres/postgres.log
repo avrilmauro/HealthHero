@@ -4,3 +4,8 @@
 2023-04-16 21:15:10.879 UTC [1618] LOG:  database system was shut down at 2023-04-16 21:15:09 UTC
 2023-04-16 21:15:10.910 UTC [1591] LOG:  database system is ready to accept connections
 2023-04-16 21:16:10.960 UTC [1627] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-16 21:18:31.020 UTC [1627] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-16 21:28:19.621 UTC [1591] LOG:  received smart shutdown request
+2023-04-16 21:28:19.634 UTC [1591] LOG:  background worker "logical replication launcher" (PID 1629) exited with exit code 1
+2023-04-16 21:28:19.636 UTC [1624] LOG:  shutting down
+2023-04-16 21:28:19.683 UTC [1591] LOG:  database system is shut down
