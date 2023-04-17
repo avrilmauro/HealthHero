@@ -41,3 +41,34 @@ def get_pharmacy_medications():
        json_data.append(dict(zip(column_headers, row)))
 
     return jsonify(json_data)
+
+
+@pharmacist.route('/update_medication_inventory', methods=['PUT'])
+def update_medication_inventory():
+    
+    req_data = request.get_json()
+
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    MedID = req_data['MedID']
+    PharmID = req_data['PharmID']
+    new_qty = req_data['new_qty']
+
+    query = 'UPDATE Pharmacy_contains_Medication '
+    query += "SET QtyInStock = " + str(new_qty) + " "
+    query += 'WHERE MedID = ' + str(MedID) + " AND PharmID = " + str(PharmID) + ""
+    
+    cursor.execute(query)
+    db.get_db().commit()
+
+    return 'Successfully updated medicine stock'
+
+
+# @pharmacist.route('/add', methods=['POST'])
+# def delete_():
+    
+
+# @pharmacist.route('/delete', methods=['DELETE'])
+# def delete_():
+    
