@@ -7,3 +7,15 @@
 2023-04-16 22:25:02.399 UTC [3179] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
 2023-04-16 22:32:42.396 UTC [1454] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
 2023-04-16 23:04:42.832 UTC [5420] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-16 23:14:04.116 UTC [1422] LOG:  received smart shutdown request
+2023-04-16 23:14:04.124 UTC [1422] LOG:  background worker "logical replication launcher" (PID 1456) exited with exit code 1
+2023-04-16 23:14:04.124 UTC [1451] LOG:  shutting down
+2023-04-16 23:14:04.223 UTC [1422] LOG:  database system is shut down
+2023-04-17 01:22:52.340 UTC [1360] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-17 01:22:52.340 UTC [1360] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-17 01:22:53.381 UTC [1399] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-17 01:22:53.381 UTC [1399] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-17 01:22:55.552 UTC [1420] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-17 01:22:55.552 UTC [1420] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-17 01:22:59.452 UTC [1491] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-17 01:22:59.452 UTC [1491] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).

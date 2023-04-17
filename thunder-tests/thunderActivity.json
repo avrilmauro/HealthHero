@@ -26,5 +26,100 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "a3a8e9c8-f9a9-438e-be88-5ba67fe7eada",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8080/p/view_your_appoitments",
+    "url": "localhost:8001/p/view_your_appoitments",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-17T01:25:39.629Z",
+    "modified": "2023-04-17T01:27:23.670Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN\": 5\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a6ed4ae9-82d9-4afa-bcdd-942d8db12d1d",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/view_your_appoitments",
+    "url": "localhost:8001/p/view_your_appointments",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-17T01:27:18.474Z",
+    "modified": "2023-04-17T01:38:29.543Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_appointment_view\": 5\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4bacbda0-a094-49c4-9bec-c023dc7d2076",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/make_an_appointment",
+    "url": "localhost:8001/p/make_an_appointment",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-17T01:34:38.126Z",
+    "modified": "2023-04-17T01:39:09.770Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"AppointmentDate\": \"2022-01-01 00:01:02\",\n  \"DoctorID_make_appointment\": 2,\n  \"SSN_make_appointment\": 5\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3192c6ec-fce1-47bf-ad4c-08b849528cf9",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/make_an_appointment",
+    "url": "localhost:8001/p/make_an_appointment",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-17T01:34:42.705Z",
+    "modified": "2023-04-17T01:40:26.834Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"AppointmentDate\": \"2022-01-01 00:01:02\",\n  \"DoctorID_make_appointment\": 2,\n  \"SSN_make_appointment\": 10\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c74add3b-df9e-41e1-9f2a-a27fb39488aa",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/get_prescription_list",
+    "url": "localhost:8001/p/get_prescription_list",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-17T02:00:56.282Z",
+    "modified": "2023-04-17T02:00:56.282Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_get_prescription\": 2\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
