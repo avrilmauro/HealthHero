@@ -3,15 +3,15 @@
 -- Create a new database.  You can change the name later.  You'll
 -- need this name in the FLASK API file(s),  the AppSmith 
 -- data source creation.
-create database health;
+#create database health;
 
 -- Via the Docker Compose file, a special user called webapp will 
 -- be created in MySQL. We are going to grant that user 
 -- all privilages to the new database we just created. 
 -- TODO: If you changed the name of the database above, you need 
 -- to change it here too.
-grant all privileges on health.* to 'webapp'@'%';
-flush privileges;
+#grant all privileges on health.* to 'webapp'@'%';
+#flush privileges;
 
 -- Move into the database we just created.
 -- TODO: If you changed the name of the database above, you need to
@@ -4750,7 +4750,8 @@ INSERT INTO Emails(Email,SSN) VALUES ('gbello5h@msu.edu',51);
 INSERT INTO Emails(Email,SSN) VALUES ('vfoyston5i@people.com.cn',171);
 INSERT INTO Emails(Email,SSN) VALUES ('snovichenko5j@about.me',111);
 
-
+SELECT * FROM Emails
+JOIN Patient USING (SSN);
 
 
 
