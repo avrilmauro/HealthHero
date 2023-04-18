@@ -3,3 +3,19 @@
 2023-04-18 02:54:18.236 UTC [1606] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
 2023-04-18 02:54:18.376 UTC [1633] LOG:  database system was shut down at 2023-04-18 02:54:16 UTC
 2023-04-18 02:54:18.422 UTC [1606] LOG:  database system is ready to accept connections
+2023-04-18 03:55:29.214 UTC [1357] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has wrong ownership
+2023-04-18 03:55:29.214 UTC [1357] HINT:  The server must be started by the user that owns the data directory.
+2023-04-18 03:55:30.253 UTC [1397] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has wrong ownership
+2023-04-18 03:55:30.253 UTC [1397] HINT:  The server must be started by the user that owns the data directory.
+2023-04-18 03:55:32.315 UTC [1424] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 03:55:32.315 UTC [1424] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 03:55:35.519 UTC [1439] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 03:55:35.519 UTC [1439] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 04:03:37.541 UTC [1356] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 04:03:37.541 UTC [1356] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 04:03:38.572 UTC [1399] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 04:03:38.572 UTC [1399] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 04:03:40.936 UTC [1433] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 04:03:40.936 UTC [1433] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 04:03:44.130 UTC [1446] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 04:03:44.130 UTC [1446] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).

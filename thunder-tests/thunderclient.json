@@ -560,15 +560,136 @@
     "tests": []
   },
   {
-    "_id": "6409283b-087b-473b-8687-e9bc9ee6d2e8",
+    "_id": "6928036b-8b3e-4468-98e7-173b4dd5fbac",
     "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
     "containerId": "",
-    "name": "update_medication_inventory test1",
-    "url": "",
+    "name": "update_medication_inventory_test1",
+    "url": "localhost:8001/pharm/update_medication_inventory",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2023-04-18T04:00:13.892Z",
+    "modified": "2023-04-18T04:01:20.338Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"MedID\": 2,\n  \"PharmID\": 10,\n  \"new_qty\": 20\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "41ac7f12-9a04-46cd-b5c6-744bfbca6f9b",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "delete_medication_test1",
+    "url": "localhost:8001/pharm/delete_medication",
+    "method": "DELETE",
+    "sortNum": 50000,
+    "created": "2023-04-18T04:08:22.813Z",
+    "modified": "2023-04-18T04:09:18.069Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"MedID_delete\": 2\n}\n\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "937b7329-cf71-4a10-9712-3fe5655ef379",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "add_medication_test1",
+    "url": "localhost:8001/pharm/add_medication",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-04-18T04:20:30.453Z",
+    "modified": "2023-04-18T04:22:05.266Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"MedID_add\": 2001,\n  \"BrandName_add\": \"Moderna\",\n  \"genericName_add\": \"fefefe\",\n  \"med_descriptionAdd\": \"cool\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e068135a-dee0-4f99-ad47-dc3ca28e0317",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "get_prescription_test1",
+    "url": "localhost:8001/pharm/get_prescription",
     "method": "GET",
-    "sortNum": 20000,
-    "created": "2023-04-17T19:52:02.507Z",
-    "modified": "2023-04-17T19:52:02.507Z",
-    "headers": []
+    "sortNum": 70000,
+    "created": "2023-04-18T04:27:22.559Z",
+    "modified": "2023-04-18T04:27:43.214Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_get_prescription\": 10\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d3d7475c-f2bc-40be-8a15-d51184326295",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "get_chemicalcompounds_test1",
+    "url": "localhost:8001/pharm/get_chemicalcompounds",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-04-18T04:32:51.667Z",
+    "modified": "2023-04-18T04:33:14.854Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_getchemicalcompounds\": 10\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5f753063-b911-4bb1-9e06-531f84298625",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "delete_prescription_test1",
+    "url": "localhost:8001/pharm/delete_prescription",
+    "method": "DELETE",
+    "sortNum": 90000,
+    "created": "2023-04-18T04:36:02.736Z",
+    "modified": "2023-04-18T04:36:55.753Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Presc_ID\": 10\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "cc29d1a2-cbd1-413b-aec2-a3ce0c0bb16f",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "add_new_education_test1",
+    "url": "localhost:8001/pharm/add_new_education",
+    "method": "POST",
+    "sortNum": 100000,
+    "created": "2023-04-18T04:43:45.870Z",
+    "modified": "2023-04-18T04:44:59.221Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"EmployeeID_education_add\": 10,\n  \"InstitutionName_education_add\" : 1,\n  \"start_year\": 2000,\n  \"end_year\": 2004,\n  \"degree\": \"Computer Science\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

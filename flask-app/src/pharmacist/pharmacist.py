@@ -64,11 +64,163 @@ def update_medication_inventory():
 
     return 'Successfully updated medicine stock'
 
+# Delete medication
+@pharmacist.route('/delete_medication', methods=['DELETE'])
+def delete_medication():
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
 
-# @pharmacist.route('/add', methods=['POST'])
-# def delete_():
+    # use cursor to query the database for a list of products
     
+    req_data = request.get_json()
+    MedID = req_data['MedID_delete']
 
-# @pharmacist.route('/delete', methods=['DELETE'])
-# def delete_():
+    query = 'Delete From Medication '
+    query += 'WHERE MedID = ' + str(MedID)
     
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+
+    return 'Successfully deleted the medication'
+
+# Delete medication
+@pharmacist.route('/delete_prescription', methods=['DELETE'])
+def delete_prescription():
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    
+    req_data = request.get_json()
+    Presc_ID = req_data['Presc_ID']
+
+    query = 'Delete From Prescription '
+    query += 'WHERE PrescID = ' + str(Presc_ID)
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+
+    return 'Successfully deleted the prescription'
+
+
+# add medication
+@pharmacist.route('/add_medication', methods=['POST'])
+def add_medication():
+    req_data = request.get_json()
+    
+    Med_ID = req_data['MedID_add']
+    brandName = req_data['BrandName_add']
+    genericName = req_data['genericName_add']
+    medDescription = req_data['med_descriptionAdd']
+    
+    insert_stmt = 'INSERT INTO Medication (MedID,BrandName,GenericName,Med_Description) '
+    insert_stmt += 'VALUES (' + str(Med_ID) + ", '" + brandName + "', '" + genericName + "', '" + medDescription + "')"
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(insert_stmt)
+    db.get_db().commit()
+    
+    output = "Successfully added medication."
+    return output
+
+
+
+# Get perscriptions for a certain patient
+@pharmacist.route('/get_prescription', methods=['GET'])
+def get_pharmacy_medications_2():
+    
+    req_data = request.get_json()
+    
+    SSN = req_data['SSN_get_prescription']
+    
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    
+    query = 'Select * FROM Patient join Prescription using (SSN) '
+    query += 'WHERE Patient.SSN = ' + str(SSN)
+    
+    cursor.execute(query)
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+       json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
+# Get perscriptions for a certain patient
+@pharmacist.route('/get_chemicalcompounds', methods=['GET'])
+def get_chemicalcompounds():
+    
+    req_data = request.get_json()
+    
+    SSN = req_data['SSN_getchemicalcompounds']
+    
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    
+    query = 'Select ScientificName, CommonName, MolecularWeight, BoilingPoint, MeltingPoint, ChemID '
+    query += 'FROM Patient join Prescription using (SSN) '
+    query += 'join Medication using(MedID) '
+    query += 'join Medication_contains_ChemicalCompounds using(MedID) '
+    query += 'join ChemicalCompounds using(ChemID) '
+    query += 'Where Patient.SSN = ' + str(SSN)
+    
+    cursor.execute(query)
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+       json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+# add new education
+@pharmacist.route('/add_new_education', methods=['POST'])
+def add_new_education():
+    req_data = request.get_json()
+    
+    EmployeeID_add_education = req_data['EmployeeID_education_add']
+    institution_id_education_add = req_data['InstitutionName_education_add']
+    start_year = req_data['start_year']
+    end_year = req_data['end_year']
+    degree = req_data['degree']
+    
+    insert_stmt = 'INSERT INTO Pharmacist_attended_EducationalInstitute (EmployeeID,InstitutionID,startYear,endYear,Degree) '
+    insert_stmt += 'VALUES (' + str(EmployeeID_add_education) + ', ' + str(institution_id_education_add)
+    insert_stmt += ', ' + str(start_year) + ', ' + str(end_year) + ", '" + degree + "')"
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(insert_stmt)
+    db.get_db().commit()
+    
+    output = "Successfully added education."
+    return output
+
