@@ -13,7 +13,7 @@ def get_pharmacy_medications():
 
     # collect user-inputted data from form
     req_data = request.get_json()
-    EmployeeID = req_data['EmployeeID']
+    EmployeeID = req_data['EmployeeID_pharmacy_meds']
 
     # query the database for a list of medications at one pharmacy using EmployeeID
     query = 'Select GenericName as MedicationName, BrandName as Manufacturer, Med_Description as Description, QtyInStock, UnitCost '
@@ -47,9 +47,9 @@ def update_medication_inventory():
 
     # collect user-inputted data from form
     req_data = request.get_json()
-    MedID = req_data['MedID']
-    PharmID = req_data['PharmID']
-    new_qty = req_data['new_qty']
+    MedID = req_data['MedID_update']
+    PharmID = req_data['PharmID_update']
+    new_qty = req_data['new_qty_update']
 
     # generate update statement to change inventory levels for one medicine
     update_stmt = 'UPDATE Pharmacy_contains_Medication '
@@ -203,7 +203,7 @@ def add_new_education():
     # collect user-inputted data from form
     req_data = request.get_json()
     EmployeeID_add_education = req_data['EmployeeID_education_add']
-    institution_id_education_add = req_data['InstitutionName_education_add']
+    institution_id_education_add = req_data['InstitutionID_education_add']
     start_year = req_data['start_year']
     end_year = req_data['end_year']
     degree = req_data['degree']

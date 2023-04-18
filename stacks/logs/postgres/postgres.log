@@ -1,21 +1,12 @@
-2023-04-18 02:54:18.227 UTC [1606] LOG:  starting PostgreSQL 13.10 (Ubuntu 13.10-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit
-2023-04-18 02:54:18.227 UTC [1606] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2023-04-18 02:54:18.236 UTC [1606] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
-2023-04-18 02:54:18.376 UTC [1633] LOG:  database system was shut down at 2023-04-18 02:54:16 UTC
-2023-04-18 02:54:18.422 UTC [1606] LOG:  database system is ready to accept connections
-2023-04-18 03:55:29.214 UTC [1357] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has wrong ownership
-2023-04-18 03:55:29.214 UTC [1357] HINT:  The server must be started by the user that owns the data directory.
-2023-04-18 03:55:30.253 UTC [1397] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has wrong ownership
-2023-04-18 03:55:30.253 UTC [1397] HINT:  The server must be started by the user that owns the data directory.
-2023-04-18 03:55:32.315 UTC [1424] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
-2023-04-18 03:55:32.315 UTC [1424] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
-2023-04-18 03:55:35.519 UTC [1439] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
-2023-04-18 03:55:35.519 UTC [1439] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
-2023-04-18 04:03:37.541 UTC [1356] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
-2023-04-18 04:03:37.541 UTC [1356] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
-2023-04-18 04:03:38.572 UTC [1399] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
-2023-04-18 04:03:38.572 UTC [1399] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
-2023-04-18 04:03:40.936 UTC [1433] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
-2023-04-18 04:03:40.936 UTC [1433] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
-2023-04-18 04:03:44.130 UTC [1446] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
-2023-04-18 04:03:44.130 UTC [1446] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 15:47:36.120 UTC [1596] LOG:  starting PostgreSQL 13.10 (Ubuntu 13.10-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit
+2023-04-18 15:47:36.120 UTC [1596] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-04-18 15:47:36.127 UTC [1596] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-04-18 15:47:36.197 UTC [1626] LOG:  database system was shut down at 2023-04-18 15:47:34 UTC
+2023-04-18 15:47:36.232 UTC [1596] LOG:  database system is ready to accept connections
+2023-04-18 15:50:16.322 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 15:59:06.099 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 15:59:06.471 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 15:59:06.828 UTC [2043] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 16:01:46.632 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 16:12:06.828 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 16:12:46.781 UTC [2866] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
