@@ -1,0 +1,70 @@
+1588:C 18 Apr 2023 02:54:18.073 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1588:C 18 Apr 2023 02:54:18.073 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1588, just started
+1588:C 18 Apr 2023 02:54:18.073 # Configuration loaded
+1588:M 18 Apr 2023 02:54:18.074 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1588
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1588:M 18 Apr 2023 02:54:18.080 # Server initialized
+1588:M 18 Apr 2023 02:54:18.080 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1588:M 18 Apr 2023 02:54:18.081 * Ready to accept connections
+1588:M 18 Apr 2023 02:54:58.455 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:54:58.456 * Background saving started by pid 1830
+1830:C 18 Apr 2023 02:54:58.467 * DB saved on disk
+1830:C 18 Apr 2023 02:54:58.469 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:54:58.556 * Background saving terminated with success
+1588:M 18 Apr 2023 02:55:51.618 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:55:51.619 * Background saving started by pid 1893
+1893:C 18 Apr 2023 02:55:51.627 * DB saved on disk
+1893:C 18 Apr 2023 02:55:51.629 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:55:51.720 * Background saving terminated with success
+1588:M 18 Apr 2023 02:56:07.088 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:56:07.089 * Background saving started by pid 1922
+1922:C 18 Apr 2023 02:56:07.097 * DB saved on disk
+1922:C 18 Apr 2023 02:56:07.098 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:56:07.190 * Background saving terminated with success
+1588:M 18 Apr 2023 02:57:04.921 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:57:04.921 * Background saving started by pid 1983
+1983:C 18 Apr 2023 02:57:04.933 * DB saved on disk
+1983:C 18 Apr 2023 02:57:04.934 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:57:05.022 * Background saving terminated with success
+1588:M 18 Apr 2023 02:57:21.097 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:57:21.097 * Background saving started by pid 2005
+2005:C 18 Apr 2023 02:57:21.104 * DB saved on disk
+2005:C 18 Apr 2023 02:57:21.105 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:57:21.198 * Background saving terminated with success
+1588:M 18 Apr 2023 02:59:00.340 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:59:00.340 * Background saving started by pid 2090
+2090:C 18 Apr 2023 02:59:00.410 * DB saved on disk
+2090:C 18 Apr 2023 02:59:00.411 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:59:00.452 * Background saving terminated with success
+1588:M 18 Apr 2023 02:59:16.023 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:59:16.024 * Background saving started by pid 2110
+2110:C 18 Apr 2023 02:59:16.030 * DB saved on disk
+2110:C 18 Apr 2023 02:59:16.030 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:59:16.124 * Background saving terminated with success
+1588:M 18 Apr 2023 02:59:40.527 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:59:40.529 * Background saving started by pid 2166
+2166:C 18 Apr 2023 02:59:40.578 * DB saved on disk
+2166:C 18 Apr 2023 02:59:40.580 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:59:40.630 * Background saving terminated with success
+1588:M 18 Apr 2023 02:59:56.008 * 1 changes in 15 seconds. Saving...
+1588:M 18 Apr 2023 02:59:56.008 * Background saving started by pid 2189
+2189:C 18 Apr 2023 02:59:56.015 * DB saved on disk
+2189:C 18 Apr 2023 02:59:56.015 * RDB: 0 MB of memory used by copy-on-write
+1588:M 18 Apr 2023 02:59:56.109 * Background saving terminated with success
