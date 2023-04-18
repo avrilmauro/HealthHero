@@ -121,5 +121,138 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "8b540a3b-3e5e-4f3e-9f52-25d76226d6af",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/pharm/update_medication_inventory",
+    "url": "localhost:8001/pharm/update_medication_inventory",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-04-18T05:06:45.486Z",
+    "modified": "2023-04-18T05:06:45.486Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{ \n  \"MedID\": 1,\n  \"PharmID\": 4,\n  \"new_qty\": 500\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dcf7a0e9-6614-40df-b7ea-d5dc1cb4e04a",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/add_doctor_review",
+    "url": "localhost:8001/p/add_doctor_review",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-18T05:17:56.703Z",
+    "modified": "2023-04-18T05:17:56.703Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Doctor Rating\": 2,\n  \"Review Description\": \"poor\",\n  \"DoctorID\": 85\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2d4df039-a6f4-411a-8cb2-fcaa60ee904a",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/doctor/get_reviews",
+    "url": "localhost:8001/doctor/get_reviews",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-18T05:21:17.664Z",
+    "modified": "2023-04-18T05:21:17.664Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"DoctorID\": 85\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7936183c-bf3b-4934-ba23-34977b0e441a",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/doc/get_reviews",
+    "url": "localhost:8001/doc/get_reviews",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-18T05:21:24.936Z",
+    "modified": "2023-04-18T05:21:24.936Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"DoctorID\": 85\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "78d11e88-6d24-49f9-867a-c26580373cf3",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/d/get_reviews",
+    "url": "localhost:8001/d/get_reviews",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-18T05:21:29.436Z",
+    "modified": "2023-04-18T05:21:29.436Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"DoctorID\": 85\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "fb0cc041-e1b5-43c7-969e-e01fe116cb93",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/doctors/get_reviews",
+    "url": "localhost:8001/doctors/get_reviews",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-18T05:21:32.970Z",
+    "modified": "2023-04-18T05:21:32.970Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"DoctorID\": 85\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b3a10a67-70e2-44c6-95db-ed64f06c52df",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/p/get_practice_info",
+    "url": "localhost:8001/p/get_practice_info",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-18T05:42:14.540Z",
+    "modified": "2023-04-18T05:42:14.540Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Insurance Company ID\": 37\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
