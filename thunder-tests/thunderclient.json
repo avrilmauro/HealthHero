@@ -568,12 +568,12 @@
     "method": "PUT",
     "sortNum": 40000,
     "created": "2023-04-18T04:00:13.892Z",
-    "modified": "2023-04-18T04:01:20.338Z",
+    "modified": "2023-04-18T20:38:32.106Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"MedID\": 2,\n  \"PharmID\": 10,\n  \"new_qty\": 20\n}",
+      "raw": "{\n  \"MedID_update\": 2,\n  \"PharmID_update\": 10,\n  \"new_qty_update\": 20\n}\n",
       "form": []
     },
     "tests": []
@@ -587,12 +587,12 @@
     "method": "DELETE",
     "sortNum": 50000,
     "created": "2023-04-18T04:08:22.813Z",
-    "modified": "2023-04-18T04:09:18.069Z",
+    "modified": "2023-04-18T20:43:06.613Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"MedID_delete\": 2\n}\n\n",
+      "raw": "{\n  \"MedID_delete\": 2001\n}\n\n",
       "form": []
     },
     "tests": []
@@ -682,12 +682,183 @@
     "method": "POST",
     "sortNum": 100000,
     "created": "2023-04-18T04:43:45.870Z",
-    "modified": "2023-04-18T04:44:59.221Z",
+    "modified": "2023-04-18T20:41:57.992Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"EmployeeID_education_add\": 10,\n  \"InstitutionName_education_add\" : 1,\n  \"start_year\": 2000,\n  \"end_year\": 2004,\n  \"degree\": \"Computer Science\"\n}",
+      "raw": "{\n  \"EmployeeID_education_add\": 10,\n  \"InstitutionID_education_add\" : 1,\n  \"start_year\": 2000,\n  \"end_year\": 2004,\n  \"degree\": \"Computer Science\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "044adb0b-f489-4a30-bf95-925b30403c36",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "update_medication_inventory_2",
+    "url": "localhost:8001/pharm/update_medication_inventory",
+    "method": "PUT",
+    "sortNum": 110000,
+    "created": "2023-04-18T20:36:28.512Z",
+    "modified": "2023-04-18T20:38:42.284Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"MedID_update\": 4,\n  \"PharmID_update\": 10,\n  \"new_qty_update\": 20\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9aa7701a-314f-4c6f-8a31-70120509c4cc",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "pharmacy_meds_test1",
+    "url": "localhost:8001/pharm/pharmacy_meds",
+    "method": "GET",
+    "sortNum": 120000,
+    "created": "2023-04-18T20:39:15.435Z",
+    "modified": "2023-04-18T20:40:57.713Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n\"EmployeeID_pharmacy_meds\" : 2\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "94b01920-d2fe-4dea-90b0-e97ada84230f",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "pharmacy_meds_test1 Copy",
+    "url": "localhost:8001/pharm/pharmacy_meds",
+    "method": "GET",
+    "sortNum": 130000,
+    "created": "2023-04-18T20:41:06.947Z",
+    "modified": "2023-04-18T20:41:12.425Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n\"EmployeeID_pharmacy_meds\" : 4\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "899d589f-b820-4e2a-b6ed-043b6960c316",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "add_new_education_test1 Copy",
+    "url": "localhost:8001/pharm/add_new_education",
+    "method": "POST",
+    "sortNum": 105000,
+    "created": "2023-04-18T20:42:03.515Z",
+    "modified": "2023-04-18T20:42:08.229Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"EmployeeID_education_add\": 11,\n  \"InstitutionID_education_add\" : 1,\n  \"start_year\": 2000,\n  \"end_year\": 2004,\n  \"degree\": \"Computer Science\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7666e35c-8b4a-4c72-b746-baaf29fd5b7b",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "delete_prescription_test1 Copy",
+    "url": "localhost:8001/pharm/delete_prescription",
+    "method": "DELETE",
+    "sortNum": 95000,
+    "created": "2023-04-18T20:42:11.044Z",
+    "modified": "2023-04-18T20:42:14.771Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Presc_ID\": 11\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "61c22dc6-eb58-4ec9-ae60-6580d0857fcb",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "get_chemicalcompounds_test1 Copy",
+    "url": "localhost:8001/pharm/get_chemicalcompounds",
+    "method": "GET",
+    "sortNum": 85000,
+    "created": "2023-04-18T20:42:17.410Z",
+    "modified": "2023-04-18T20:42:23.465Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_getchemicalcompounds\": 11\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ee9fe82d-e042-4ec5-97a3-b750df682eaa",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "get_prescription_test1 Copy",
+    "url": "localhost:8001/pharm/get_prescription",
+    "method": "GET",
+    "sortNum": 75000,
+    "created": "2023-04-18T20:42:33.166Z",
+    "modified": "2023-04-18T20:42:36.082Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_get_prescription\": 11\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ba9a4db6-fd54-4572-9b21-1f3632226226",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "add_medication_test1 Copy",
+    "url": "localhost:8001/pharm/add_medication",
+    "method": "POST",
+    "sortNum": 65000,
+    "created": "2023-04-18T20:42:46.370Z",
+    "modified": "2023-04-18T20:42:51.978Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"MedID_add\": 2002,\n  \"BrandName_add\": \"Moderna2\",\n  \"genericName_add\": \"fefefe\",\n  \"med_descriptionAdd\": \"cool\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "474d6b76-fe12-4833-97e2-08068ac8ef11",
+    "colId": "ea5a97ba-db70-42c4-9e8b-9ab4526733ea",
+    "containerId": "",
+    "name": "delete_medication_test1 Copy",
+    "url": "localhost:8001/pharm/delete_medication",
+    "method": "DELETE",
+    "sortNum": 55000,
+    "created": "2023-04-18T20:43:31.324Z",
+    "modified": "2023-04-18T20:43:35.333Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"MedID_delete\": 2002\n}\n\n",
       "form": []
     },
     "tests": []
