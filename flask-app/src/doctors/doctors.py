@@ -18,7 +18,43 @@ def get_patient_name_list():
 
     # use cursor to query the database for a list of products
     
-    query = 'Select Patient.fName as PatientFirstName, Patient.lName as PatientLirstName, SSN, DOB '
+    query = 'Select Patient.fName as PatientFirstName, Patient.lName as PatientLastName, SSN, DOB '
+    query += 'FROM Doctor join Doctor_treats_Patient using(DoctorID) '
+    query += 'join Patient using(SSN) '
+    query += 'Where Doctor.DoctorID = ' + str(DoctorID)
+    
+    cursor.execute(query)
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+       json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+ 
+ # Get a list of of a doctor's patients name, appoitmentdates, and DOB
+@doctors.route('/view_appointments', methods=['GET'])
+def view_appointments():
+    req_data = request.get_json()
+    
+    DoctorID = req_data['DoctorID_view_appointments']
+    
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    
+    query = 'Select AppointmentDate, SSN, Patient.fName as PatientFirstName, Patient.lName as PatientLastName, DOB '
     query += 'FROM Doctor join Doctor_treats_Patient using(DoctorID) '
     query += 'join Patient using(SSN) '
     query += 'Where Doctor.DoctorID = ' + str(DoctorID)
@@ -42,7 +78,6 @@ def get_patient_name_list():
 
     return jsonify(json_data)
 
-
 # Get more information about a specific patient
 @doctors.route('/patient_medical_conditions', methods=['GET'])
 def get_patient_medical_condtions():
@@ -59,13 +94,13 @@ def get_patient_medical_condtions():
 
     # use cursor to query the database for a list of products
 
-    query = 'SELECT ConditionName, DateDiscovered, Prevalence, TreatmentOptions, Transmissible, Causes, Severity '
+    query = 'SELECT ConditionID, ConditionName, DateDiscovered, Prevalence, TreatmentOptions, Transmissible, Causes, Severity '
     query += 'FROM Doctor join Doctor_treats_Patient using(DoctorID) '
     query += 'join Patient using(SSN) '
     query += 'join Patient_diagnosed_MedicalCondition PdMC on Patient.SSN = PdMC.SSN '
     query += 'join MedicalCondition using(ConditionID) '
     query += 'Where Patient.SSN = (SELECT SSN FROM Patient '
-    query += 'Where (Patient.SSN = ' + str(PatientSSN) + ') AND (Doctor.DoctorID = ' + str(DoctorID) + '))'
+    query += 'Where (Patient.SSN = ' + str(PatientSSN) + '))'
     
     cursor.execute(query)
 

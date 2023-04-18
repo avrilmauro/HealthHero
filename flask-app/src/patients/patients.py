@@ -13,7 +13,7 @@ def get_doctor_names():
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute('Select fName as FirstName, lName as LastName FROM Doctor')
+    cursor.execute('Select fName as FirstName, lName as LastName, MDorDO FROM Doctor')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -75,7 +75,7 @@ def view_your_appointments():
     patient_SSN = req_data['SSN_appointment_view']
 
     # use cursor to query the database for a list of products
-    query = 'Select AppointmentDate, Doctor.fName as DoctorFirstName, Doctor.lName as DoctorLastName, Cost '
+    query = 'Select AppointmentDate, DoctorID, Doctor.fName as DoctorFirstName, Doctor.lName as DoctorLastName, Cost '
     query += 'FROM Patient join Doctor_treats_Patient using(SSN) '
     query += 'join Doctor using(DoctorID) '
     query += 'WHERE SSN = ' + str(patient_SSN)
