@@ -10,3 +10,72 @@
 2023-04-18 16:01:46.632 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
 2023-04-18 16:12:06.828 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
 2023-04-18 16:12:46.781 UTC [2866] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 16:48:27.408 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 16:52:19.995 UTC [5032] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 17:02:57.103 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 17:30:57.432 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 19:54:46.832 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:00:06.841 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:12:06.980 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:17:27.098 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:25:47.353 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:32:47.449 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:33:47.450 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:49:47.691 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:52:47.818 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:58:07.573 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 20:59:27.690 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:03:47.997 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:04:07.643 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:09:07.703 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:15:07.819 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:16:07.827 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:20:27.967 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:28:28.074 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:28:48.252 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:33:48.322 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 21:42:08.232 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:15:08.863 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:24:08.829 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:45:49.602 UTC [20543] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:47:49.628 UTC [20661] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:54:09.478 UTC [21028] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:56:09.290 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 22:57:29.617 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 23:09:29.556 UTC [1630] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Operation not permitted
+2023-04-18 23:23:26.439 UTC [1596] LOG:  received smart shutdown request
+2023-04-18 23:23:26.454 UTC [1596] LOG:  background worker "logical replication launcher" (PID 1632) exited with exit code 1
+2023-04-18 23:23:26.461 UTC [1627] LOG:  shutting down
+2023-04-18 23:23:26.732 UTC [1596] LOG:  database system is shut down
+2023-04-18 23:23:52.766 UTC [1358] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:23:52.766 UTC [1358] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:23:53.825 UTC [1398] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:23:53.825 UTC [1398] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:23:55.941 UTC [1420] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:23:55.941 UTC [1420] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:23:59.279 UTC [1491] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:23:59.279 UTC [1491] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:30:06.580 UTC [1362] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:30:06.580 UTC [1362] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:30:07.628 UTC [1398] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:30:07.628 UTC [1398] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:30:09.737 UTC [1421] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:30:09.737 UTC [1421] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-18 23:30:13.661 UTC [1490] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-18 23:30:13.661 UTC [1490] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 01:45:49.760 UTC [1356] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 01:45:49.760 UTC [1356] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 01:45:50.841 UTC [1398] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 01:45:50.841 UTC [1398] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 01:45:53.185 UTC [1420] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 01:45:53.185 UTC [1420] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 01:45:56.608 UTC [1438] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 01:45:56.608 UTC [1438] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 02:04:08.386 UTC [1362] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 02:04:08.386 UTC [1362] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 02:04:09.451 UTC [1398] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 02:04:09.451 UTC [1398] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 02:04:11.900 UTC [1421] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 02:04:11.900 UTC [1421] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 02:04:14.969 UTC [1491] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 02:04:14.969 UTC [1491] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).

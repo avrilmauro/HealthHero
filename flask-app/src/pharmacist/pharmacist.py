@@ -16,10 +16,10 @@ def get_pharmacy_medications():
     EmployeeID = req_data['EmployeeID_pharmacy_meds']
 
     # query the database for a list of medications at one pharmacy using EmployeeID
-    query = 'Select GenericName as MedicationName, BrandName as Manufacturer, Med_Description as Description, QtyInStock, UnitCost '
+    query = 'Select MedID, PharmID, QtyInStock, GenericName as MedicationName, BrandName as Manufacturer, Med_Description as Description, QtyInStock, UnitCost '
     query += 'FROM Pharmacist join Pharmacy using(PharmID) join Pharmacy_contains_Medication using(PharmID) '
     query += 'join Medication using(MedID) '
-    query += 'WHERE EmployeeID = ' + str(EmployeeID) + ''
+    query += 'WHERE EmployeeID = ' + str(EmployeeID)
     cursor.execute(query)
 
     # grab the column headers from the returned data

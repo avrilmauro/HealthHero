@@ -35,3 +35,40 @@ fs.writeFileSync("/opt/appsmith/editor/index.html", content)
 2023/04/18 15:47:36 [notice] 1592#1592: start worker process 1636
 2023/04/18 15:47:36 [notice] 1592#1592: start worker process 1637
 2023/04/18 15:47:36 [notice] 1592#1592: start worker process 1638
+2023/04/18 23:23:27 [notice] 1592#1592: signal 3 (SIGQUIT) received from 1, shutting down
+2023/04/18 23:23:27 [notice] 1634#1634: gracefully shutting down
+2023/04/18 23:23:27 [notice] 1633#1633: gracefully shutting down
+2023/04/18 23:23:27 [notice] 1633#1633: exiting
+2023/04/18 23:23:27 [notice] 1634#1634: exiting
+2023/04/18 23:23:27 [notice] 1635#1635: gracefully shutting down
+2023/04/18 23:23:27 [notice] 1635#1635: exiting
+2023/04/18 23:23:27 [notice] 1636#1636: gracefully shutting down
+2023/04/18 23:23:27 [notice] 1636#1636: exiting
+2023/04/18 23:23:27 [notice] 1637#1637: gracefully shutting down
+2023/04/18 23:23:27 [notice] 1637#1637: exiting
+2023/04/18 23:23:27 [notice] 1638#1638: gracefully shutting down
+2023/04/18 23:23:27 [notice] 1638#1638: exiting
+2023/04/18 23:23:27 [notice] 1634#1634: exit
+2023/04/18 23:23:27 [notice] 1633#1633: exit
+2023/04/18 23:23:27 [notice] 1638#1638: exit
+2023/04/18 23:23:27 [notice] 1637#1637: exit
+2023/04/18 23:23:27 [notice] 1635#1635: exit
+2023/04/18 23:23:27 [notice] 1592#1592: signal 17 (SIGCHLD) received from 1635
+2023/04/18 23:23:27 [notice] 1592#1592: worker process 1635 exited with code 0
+2023/04/18 23:23:27 [notice] 1592#1592: signal 29 (SIGIO) received
+2023/04/18 23:23:27 [notice] 1592#1592: signal 17 (SIGCHLD) received from 1637
+2023/04/18 23:23:27 [notice] 1592#1592: worker process 1637 exited with code 0
+2023/04/18 23:23:27 [notice] 1592#1592: signal 29 (SIGIO) received
+2023/04/18 23:23:27 [notice] 1636#1636: exit
+2023/04/18 23:23:27 [notice] 1592#1592: signal 17 (SIGCHLD) received from 1633
+2023/04/18 23:23:27 [notice] 1592#1592: worker process 1633 exited with code 0
+2023/04/18 23:23:27 [notice] 1592#1592: signal 29 (SIGIO) received
+2023/04/18 23:23:27 [notice] 1592#1592: signal 17 (SIGCHLD) received from 1636
+2023/04/18 23:23:27 [notice] 1592#1592: worker process 1636 exited with code 0
+2023/04/18 23:23:27 [notice] 1592#1592: signal 29 (SIGIO) received
+2023/04/18 23:23:27 [notice] 1592#1592: signal 17 (SIGCHLD) received from 1638
+2023/04/18 23:23:27 [notice] 1592#1592: worker process 1638 exited with code 0
+2023/04/18 23:23:27 [notice] 1592#1592: signal 29 (SIGIO) received
+2023/04/18 23:23:27 [notice] 1592#1592: signal 17 (SIGCHLD) received from 1634
+2023/04/18 23:23:27 [notice] 1592#1592: worker process 1634 exited with code 0
+2023/04/18 23:23:27 [notice] 1592#1592: exit

@@ -16,9 +16,10 @@ def get_patient_name_list():
    DoctorID = req_data['DoctorID_patient_names']
 
    # use cursor to query the database for a list of patient info using DoctorID
-   query = 'SELECT Patient.fName as PatientFirstName, Patient.lName as PatientLastName, SSN, DOB '
+   query = 'SELECT Patient.fName as PatientFirstName, Patient.lName as PatientLastName, SSN, DOB, Emails.Email '
    query += 'FROM Doctor JOIN Doctor_treats_Patient using(DoctorID) '
    query += 'JOIN Patient using(SSN) '
+   query += 'Join Emails using(SSN)'
    query += 'WHERE Doctor.DoctorID = ' + str(DoctorID)
    cursor.execute(query)
 
@@ -88,12 +89,9 @@ def get_patient_medical_condtions():
    
    # use cursor to query the database for a list of medical conditions using patient info
    query = 'SELECT ConditionID, ConditionName, DateDiscovered, Prevalence, TreatmentOptions, Transmissible, Causes, Severity '
-   query += 'FROM Doctor JOIN Doctor_treats_Patient USING(DoctorID) '
-   query += 'JOIN Patient USING(SSN) '
-   query += 'JOIN Patient_diagnosed_MedicalCondition PdMC on Patient.SSN = PdMC.SSN '
+   query += 'FROM Patient JOIN Patient_diagnosed_MedicalCondition using(SSN) '
    query += 'JOIN MedicalCondition USING(ConditionID) '
-   query += 'WHERE Patient.SSN = (SELECT SSN FROM Patient '
-   query += 'WHERE (Patient.SSN = ' + str(PatientSSN) + '))'
+   query += 'WHERE Patient.SSN = ' + str(PatientSSN)
    cursor.execute(query)
 
    # grab the column headers from the returned data
@@ -219,13 +217,13 @@ def view_medication_prescribed_to_patient():
    SSN = req_data['SSN_medications']
 
    # query the database for medication information using patient SSN and DoctorID
-   query = 'Select MedicationCommonName, BrandName, Dosage, '
-   query += 'GenericName, Med_Description, DoctorID, Patient.SSN '
-   query += 'FROM Doctor join Doctor_treats_Patient using(DoctorID) '
-   query += 'join Patient using(SSN) '
-   query += 'join Prescription using(DoctorID) '
-   query += 'join Medication using(MedID) '
-   query += 'WHERE Patient.SSN = ' + str(SSN) + ' AND Doctor.DoctorID = ' + str(DoctorID)
+   query = 'Select MedicationCommonName, Dosage, BrandName, GenericName, Med_Description FROM Patient join Prescription using(SSN) '
+   query += 'join Medication using(MedID)'
+   #query = 'Select MedicationCommonName, BrandName, Dosage, '
+   #query += 'GenericName, Med_Description, Patient.SSN '
+   #query += 'FROM Patient join Prescription using(SSN) '
+   #query += 'join Medication using(MedID) '
+   #query += 'WHERE Patient.SSN = ' + str(SSN)
    cursor.execute(query)
 
    # grab the column headers from the returned data
@@ -292,7 +290,7 @@ def get_reviews():
 
    # collect user-inputted data from form
    req_data = request.get_json()
-   DoctorID = req_data['DoctorID']
+   DoctorID = req_data['DoctorID_get_reviews']
 
    # use cursor to query the database for doctor reviews using DoctorID
    query = 'SELECT * FROM DoctorReviews '

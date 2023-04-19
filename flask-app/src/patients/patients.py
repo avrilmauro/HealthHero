@@ -243,9 +243,9 @@ def add_doctor_review():
 
     # collect user-inputted data from form
     req_data = request.get_json()
-    rating = req_data['Doctor Rating']
-    rev_description = req_data['Review Description']
-    doctor_id = req_data['DoctorID']
+    rating = req_data['Doctor_Rating']
+    rev_description = req_data['Review_Description']
+    doctor_id = req_data['DoctorID_add_review']
     
     # generate insert statement to add a doctor review 
     insert_stmt = 'INSERT INTO DoctorReviews (Rating, Rev_Description, DoctorID)'
@@ -255,7 +255,8 @@ def add_doctor_review():
     # commit changes
     db.get_db().commit()
     
-    output = 'Successfully submitted review for ' + str(doctor_id) + '  "' +  '.'
+    output = 'Successfully added doctor review'
+    return output
 
 # Get info on practices which accept a specific insurance
 @patients.route('/get_practice_info', methods=['GET'])
