@@ -4,3 +4,1070 @@ ns:/page/edit# socket p84IueOFSiYvSPhYAAAC joined the room page:643f284afbcecc56
 ns:/# socket lJ6WbymbCKUXTJ8PAAAB joined the room app:643f2841fbcecc56f0478b4b
 ns:/# socket lJ6WbymbCKUXTJ8PAAAB left the room app:643f2841fbcecc56f0478b4b
 ns:/# socket lJ6WbymbCKUXTJ8PAAAB joined the room app:643f2841fbcecc56f0478b4b
+ns:/# socket yiOe4y2rtC_ir2VmAAAE joined the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit# socket 8FyIdtC-QpQKegJdAAAF joined the room page:643f284afbcecc56f0478b57-master
+ns:/# socket WCqqHX0Xm15wcwa1AAAH joined the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit# socket b7IxmjDwROD_91tCAAAI joined the room page:643f284afbcecc56f0478b57-master
+ns:/# socket WCqqHX0Xm15wcwa1AAAH left the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit # socket b7IxmjDwROD_91tCAAAI left the room page:643f284afbcecc56f0478b57-master
+Load environment configuration
+RTS version v1.9.13 running at http://localhost:8091
+Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
+    at Function.AxiosError.from (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:2725:25)
+    at RedirectableRequest.emit (events.js:400:28)
+    at ClientRequest.eventHandlers.<computed> (/opt/appsmith/rts/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  port: 8080,
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      Cookie: 'SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;',
+      'User-Agent': 'axios/1.2.0',
+      'Accept-Encoding': 'gzip, deflate, br'
+    },
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/users/me',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/v1/users/me',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'localhost',
+      port: '8080',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/v1/users/me'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/v1/users/me HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Cookie: SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;\r\n' +
+        'User-Agent: axios/1.2.0\r\n' +
+        'Accept-Encoding: gzip, deflate, br\r\n' +
+        'Host: localhost:8080\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v1/users/me',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://localhost:8080/api/v1/users/me',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8080
+  }
+}
+ns:/# socket pZdy6SK5gEWZ1x8PAAAB joined the room app:643f2841fbcecc56f0478b4b
+Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
+    at Function.AxiosError.from (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:2725:25)
+    at RedirectableRequest.emit (events.js:400:28)
+    at ClientRequest.eventHandlers.<computed> (/opt/appsmith/rts/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  port: 8080,
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      Cookie: 'SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;',
+      'User-Agent': 'axios/1.2.0',
+      'Accept-Encoding': 'gzip, deflate, br'
+    },
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/users/me',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/v1/users/me',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'localhost',
+      port: '8080',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/v1/users/me'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/v1/users/me HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Cookie: SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;\r\n' +
+        'User-Agent: axios/1.2.0\r\n' +
+        'Accept-Encoding: gzip, deflate, br\r\n' +
+        'Host: localhost:8080\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v1/users/me',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://localhost:8080/api/v1/users/me',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8080
+  }
+}
+Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
+    at Function.AxiosError.from (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:2725:25)
+    at RedirectableRequest.emit (events.js:400:28)
+    at ClientRequest.eventHandlers.<computed> (/opt/appsmith/rts/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  port: 8080,
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      Cookie: 'SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;',
+      'User-Agent': 'axios/1.2.0',
+      'Accept-Encoding': 'gzip, deflate, br'
+    },
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/users/me',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/v1/users/me',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'localhost',
+      port: '8080',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/v1/users/me'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/v1/users/me HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Cookie: SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;\r\n' +
+        'User-Agent: axios/1.2.0\r\n' +
+        'Accept-Encoding: gzip, deflate, br\r\n' +
+        'Host: localhost:8080\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v1/users/me',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://localhost:8080/api/v1/users/me',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8080
+  }
+}
+Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
+    at Function.AxiosError.from (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:2725:25)
+    at RedirectableRequest.emit (events.js:400:28)
+    at ClientRequest.eventHandlers.<computed> (/opt/appsmith/rts/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  port: 8080,
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      Cookie: 'SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;',
+      'User-Agent': 'axios/1.2.0',
+      'Accept-Encoding': 'gzip, deflate, br'
+    },
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/users/me',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/v1/users/me',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'localhost',
+      port: '8080',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/v1/users/me'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/v1/users/me HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Cookie: SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;\r\n' +
+        'User-Agent: axios/1.2.0\r\n' +
+        'Accept-Encoding: gzip, deflate, br\r\n' +
+        'Host: localhost:8080\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v1/users/me',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://localhost:8080/api/v1/users/me',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8080
+  }
+}
+Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
+    at Function.AxiosError.from (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:2725:25)
+    at RedirectableRequest.emit (events.js:400:28)
+    at ClientRequest.eventHandlers.<computed> (/opt/appsmith/rts/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  port: 8080,
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      Cookie: 'SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;',
+      'User-Agent': 'axios/1.2.0',
+      'Accept-Encoding': 'gzip, deflate, br'
+    },
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/users/me',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/v1/users/me',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'localhost',
+      port: '8080',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/v1/users/me'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/v1/users/me HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Cookie: SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;\r\n' +
+        'User-Agent: axios/1.2.0\r\n' +
+        'Accept-Encoding: gzip, deflate, br\r\n' +
+        'Host: localhost:8080\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v1/users/me',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://localhost:8080/api/v1/users/me',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8080
+  }
+}
+Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
+    at Function.AxiosError.from (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/opt/appsmith/rts/node_modules/axios/dist/node/axios.cjs:2725:25)
+    at RedirectableRequest.emit (events.js:400:28)
+    at ClientRequest.eventHandlers.<computed> (/opt/appsmith/rts/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  port: 8080,
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      Cookie: 'SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;',
+      'User-Agent': 'axios/1.2.0',
+      'Accept-Encoding': 'gzip, deflate, br'
+    },
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/users/me',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/v1/users/me',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'localhost',
+      port: '8080',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/v1/users/me'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/v1/users/me HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Cookie: SESSION=2d486691-a6e2-4bd0-ba54-8737b1522957;\r\n' +
+        'User-Agent: axios/1.2.0\r\n' +
+        'Accept-Encoding: gzip, deflate, br\r\n' +
+        'Host: localhost:8080\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v1/users/me',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://localhost:8080/api/v1/users/me',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8080
+  }
+}
+ns:/page/edit# socket 9en-vMo6ANwNZ1WaAAAO joined the room page:643f284afbcecc56f0478b54-master
+ns:/# socket NibnhG6VrfdYGPgOAAAN joined the room app:643f2841fbcecc56f0478b4b
+ns:/# socket NibnhG6VrfdYGPgOAAAN left the room app:643f2841fbcecc56f0478b4b
+ns:/# socket NibnhG6VrfdYGPgOAAAN joined the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit # socket 9en-vMo6ANwNZ1WaAAAO left the room page:643f284afbcecc56f0478b54-master
+ns:/page/edit# socket 9en-vMo6ANwNZ1WaAAAO joined the room page:643f284afbcecc56f0478b55-master
+ns:/# socket NibnhG6VrfdYGPgOAAAN left the room app:643f2841fbcecc56f0478b4b
+ns:/# socket NibnhG6VrfdYGPgOAAAN joined the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit # socket 9en-vMo6ANwNZ1WaAAAO left the room page:643f284afbcecc56f0478b55-master
+ns:/page/edit# socket 9en-vMo6ANwNZ1WaAAAO joined the room page:643f284afbcecc56f0478b58-master
+ns:/# socket NibnhG6VrfdYGPgOAAAN left the room app:643f2841fbcecc56f0478b4b
+ns:/# socket NibnhG6VrfdYGPgOAAAN joined the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit # socket 9en-vMo6ANwNZ1WaAAAO left the room page:643f284afbcecc56f0478b58-master
+ns:/page/edit# socket 9en-vMo6ANwNZ1WaAAAO joined the room page:643f284afbcecc56f0478b57-master
+ns:/# socket NibnhG6VrfdYGPgOAAAN left the room app:643f2841fbcecc56f0478b4b
+ns:/# socket NibnhG6VrfdYGPgOAAAN joined the room app:643f2841fbcecc56f0478b4b
+ns:/# socket NibnhG6VrfdYGPgOAAAN left the room app:643f2841fbcecc56f0478b4b
+ns:/page/edit # socket 9en-vMo6ANwNZ1WaAAAO left the room page:643f284afbcecc56f0478b57-master
+Load environment configuration
+RTS version v1.9.13 running at http://localhost:8091

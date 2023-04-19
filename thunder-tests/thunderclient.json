@@ -862,5 +862,43 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "b133211f-a46a-4af6-83fb-56d00454d752",
+    "colId": "d8a2f066-8e33-408b-a123-da3d5909b434",
+    "containerId": "",
+    "name": "view_medical_conditions_test1 Copy",
+    "url": "localhost:8001/p/view_medical_conditions",
+    "method": "GET",
+    "sortNum": 75000,
+    "created": "2023-04-19T06:55:30.482Z",
+    "modified": "2023-04-19T06:55:48.360Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"SSN_view_medical_conditinos\":7\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c308ee50-86b6-42d2-a402-8a647cf4f836",
+    "colId": "ed9b3c14-d92e-434f-aca8-40054e1ed09a",
+    "containerId": "",
+    "name": "paitent_names_test3",
+    "url": "localhost:8001/d/patient_names",
+    "method": "GET",
+    "sortNum": 45000,
+    "created": "2023-04-19T06:56:17.088Z",
+    "modified": "2023-04-19T06:56:30.773Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"DoctorID_patient_names\": 13\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

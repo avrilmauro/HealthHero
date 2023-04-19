@@ -135,7 +135,7 @@ def get_prescription_list():
     SSN_1 = req_data['SSN_get_prescription']
 
     # query the database for prescriptions using patient SSN
-    query = 'Select MedicationCommonName, Dosage '
+    query = 'Select PrescID, MedicationCommonName, Dosage '
     query += 'FROM Patient join Prescription using (SSN) '
     query += 'WHERE SSN = ' + str(SSN_1)
     cursor.execute(query)

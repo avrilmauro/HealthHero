@@ -79,3 +79,19 @@
 2023-04-19 02:04:11.900 UTC [1421] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
 2023-04-19 02:04:14.969 UTC [1491] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
 2023-04-19 02:04:14.969 UTC [1491] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 03:31:11.489 UTC [1363] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 03:31:11.489 UTC [1363] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 03:31:12.559 UTC [1399] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 03:31:12.559 UTC [1399] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 03:31:15.679 UTC [1424] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 03:31:15.679 UTC [1424] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 03:31:19.067 UTC [1492] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 03:31:19.067 UTC [1492] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 06:54:46.870 UTC [1360] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 06:54:46.870 UTC [1360] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 06:54:47.956 UTC [1399] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 06:54:47.956 UTC [1399] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 06:54:50.043 UTC [1422] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 06:54:50.043 UTC [1422] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2023-04-19 06:54:53.917 UTC [1491] FATAL:  data directory "/appsmith-stacks/data/postgres/main" has invalid permissions
+2023-04-19 06:54:53.917 UTC [1491] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
